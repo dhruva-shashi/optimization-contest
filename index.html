@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <title>Hash it Out Final Round</title>
+        <link rel="stylesheet" href="/styles/index.css">
+        <script src="/scripts/index.js"></script>
+    </head>
+
+    <body>
+        <div class="heading1">Inspiron 2022</div>
+        <div class="heading1">Hash it Out</div>
+
+        <div id="container">
+            <div id="left-pane">
+                <table>
+                    <tr>
+                        <td>
+                            <a id="my-submissions">My Submissions</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="/leaderboard">Leaderboard</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="/user-manual">User Manual</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Downloads</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="/problem-statement.pdf" download>Problem Statement</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="/input-files/input-a.txt" download>Input A</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="/input-files/input-b.txt" download>Input B</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="/input-files/input-c.txt" download>Input C</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="/input-files/input-d.txt" download>Input D</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="/input-files/input-e.txt" download>Input E</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="right-pane">
+                <div id="passcode-container">
+                    Enter Passcode:
+                    <input type="password" id="passcode" placeholder="Enter Passcode">
+                    <input type="button" value="Verify" id="verify" onclick="verify()">
+                </div>
+
+                <form id="submission">
+                    <table>
+                        <tr>
+                            <td>Select Code File</td>
+                            <td><input type="file" id="code-file" name="code-file" size="1000000" /></td>
+                            <td>
+                                <strong>Best Score</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Select file A</td>
+                            <td><input type="file" id="file1" name="file1" accept=".txt" /></td>
+                            <td>
+                                <div id="best-points-1">0</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Select file B</td>
+                            <td><input type="file" id="file2" name="file2" accept=".txt" /></td>
+                            <td>
+                                <div id="best-points-2">0</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Select file C</td>
+                            <td><input type="file" id="file3" name="file3" accept=".txt" /></td>
+                            <td>
+                                <div id="best-points-3">0</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Select file D</td>
+                            <td><input type="file" id="file4" name="file4" accept=".txt" /></td>
+                            <td>
+                                <div id="best-points-4">0</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Select file E</td>
+                            <td><input type="file" id="file5" name="file5" accept=".txt" /></td>
+                            <td>
+                                <div id="best-points-5">0</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>----------------</td>
+                            <td>----------------</td>
+                            <td>----------------</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Total Points</strong></td>
+                            <td> </td>
+                            <td>
+                                <div id="best-total-points">0</div>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <input type="submit" value="Submit" id="submit" onclick="make_submission()"/> <br>
+            </div>
+        </div>
+
+        <script>
+            init();
+        </script>
+    </body>
+</html>
